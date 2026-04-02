@@ -1,74 +1,32 @@
-# My React project template
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ```
 38-todo-new
+├─ build
+│  ├─ about.txt
+│  ├─ android-chrome-192x192.png
+│  ├─ android-chrome-512x512.png
+│  ├─ apple-touch-icon.png
+│  ├─ asset-manifest.json
+│  ├─ favicon-16x16.png
+│  ├─ favicon-32x32.png
+│  ├─ favicon-96x96.png
+│  ├─ favicon.ico
+│  ├─ favicon.svg
+│  ├─ index.html
+│  ├─ site.webmanifest
+│  ├─ static
+│  │  ├─ css
+│  │  │  ├─ main.94ec8306.css
+│  │  │  └─ main.94ec8306.css.map
+│  │  └─ js
+│  │     ├─ main.9d743fde.js
+│  │     ├─ main.9d743fde.js.LICENSE.txt
+│  │     ├─ main.9d743fde.js.map
+│  │     ├─ main.dc06bbce.js
+│  │     ├─ main.dc06bbce.js.LICENSE.txt
+│  │     └─ main.dc06bbce.js.map
+│  ├─ web-app-manifest-192x192.png
+│  └─ web-app-manifest-512x512.png
 ├─ package-lock.json
 ├─ package.json
 ├─ public
@@ -78,20 +36,33 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 │  ├─ apple-touch-icon.png
 │  ├─ favicon-16x16.png
 │  ├─ favicon-32x32.png
+│  ├─ favicon-96x96.png
 │  ├─ favicon.ico
+│  ├─ favicon.svg
 │  ├─ index.html
-│  └─ site.webmanifest
+│  ├─ site.webmanifest
+│  ├─ web-app-manifest-192x192.png
+│  └─ web-app-manifest-512x512.png
 ├─ README.md
 ├─ src
 │  ├─ assets
 │  ├─ components
-│  │  └─ App.tsx
+│  │  ├─ App.tsx
+│  │  └─ Todos
+│  │     ├─ TodoFilter.tsx
+│  │     ├─ TodoForm.tsx
+│  │     ├─ TodoItem.tsx
+│  │     ├─ TodoList.tsx
+│  │     └─ TodosActions.tsx
 │  ├─ data
 │  ├─ global.d.ts
 │  ├─ hooks
+│  │  ├─ useLocalStorage.tsx
+│  │  └─ useTodos.tsx
 │  ├─ index.tsx
 │  ├─ locales
 │  ├─ mocks
+│  ├─ setupTests.ts
 │  ├─ store
 │  ├─ styles
 │  │  ├─ base
@@ -100,9 +71,25 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 │  │  │  ├─ variables.css.map
 │  │  │  └─ variables.sass
 │  │  ├─ components
-│  │  │  ├─ App.css
-│  │  │  ├─ App.css.map
-│  │  │  └─ App.sass
+│  │  │  ├─ App.module.css
+│  │  │  ├─ App.module.css.map
+│  │  │  ├─ App.module.sass
+│  │  │  └─ Todos
+│  │  │     ├─ TodoFilter.module.css
+│  │  │     ├─ TodoFilter.module.css.map
+│  │  │     ├─ TodoFilter.module.sass
+│  │  │     ├─ TodoForm.module.css
+│  │  │     ├─ TodoForm.module.css.map
+│  │  │     ├─ TodoForm.module.sass
+│  │  │     ├─ TodoItem.module.css
+│  │  │     ├─ TodoItem.module.css.map
+│  │  │     ├─ TodoItem.module.sass
+│  │  │     ├─ TodoList.module.css
+│  │  │     ├─ TodoList.module.css.map
+│  │  │     ├─ TodoList.module.sass
+│  │  │     ├─ TodosActions.module.css
+│  │  │     ├─ TodosActions.module.css.map
+│  │  │     └─ TodosActions.module.sass
 │  │  ├─ index.css
 │  │  ├─ index.css.map
 │  │  └─ index.sass
