@@ -14,10 +14,13 @@
     "uuid": "^13.0.0",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://Zyxce.github.io/TodoApp",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -41,6 +44,7 @@
   "devDependencies": {
     "@types/react": "^19.1.5",
     "@types/react-dom": "^19.1.5",
+    "gh-pages": "^6.3.0",
     "typescript": "^5.8.3"
   }
 }
